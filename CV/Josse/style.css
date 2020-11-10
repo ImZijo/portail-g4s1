@@ -1,0 +1,90 @@
+/*Pour éviter une marge sur le header
+et mettre un fond coloré pour la page*/
+body{
+  margin: 0px;
+  background-color: #F8EFBA;
+  font-family: 'Trebuchet Ms', sans-serif
+}
+
+/*L'en-tête qui restera le même sur toutes les
+pages car inclus dans la charte graphique*/
+header{
+  width: 100%;
+  background-color: #EAB543;
+  margin: 0px;
+  position: relative;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+
+/*Pour que l'image soit dans un lien*/
+header a{
+  display: block;
+  width: 10%;
+  margin-right: 45%;
+  margin-left: 45%;
+}
+
+/*plus petit effet lorsqu'on passe dessus
+( il s'agrandit avec scale() )*/
+header img{
+  transform: scale(1);
+  width: 100%;
+}
+header img:hover{
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
+/*Des dimensions qui ne changeront pas d'une
+page à l'autre, contrairement aux couleurs*/
+article{
+  margin: 3vw;
+  padding: 3vw;
+}
+h1{
+  text-align: center;
+  font-size: 7vh;
+}
+p{
+  font-size: 3vh;
+}
+h2 a{
+  color: inherit;
+}
+h2{
+  text-align: center;
+}
+
+/*spécificités de l'article dans index.html*/
+#presentation{
+  background-color: #D6A2E8;
+}
+#presentation h1, #presentation h2{
+  color: #82589F;
+}
+/*Pareil dans les autres pages*/
+#studies{
+  background-color: #55E6C1;
+}
+#studies h1, #studies h2{
+  color: #1B9CFC;
+}
+#competences{
+  background-color: #B33771;
+}
+#competences h1, #competences h2{
+  color: #6D214F;
+}
+#experience{
+  background-color: #9AECDB;
+}
+#experience h1, #experience h2{
+  color: #58B19F;
+}
+#interests{
+  background-color: #3B3B98;
+}
+#interests h1, #interests h2{
+  color: #182C61;
+}
